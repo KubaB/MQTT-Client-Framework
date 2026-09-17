@@ -7,7 +7,7 @@ Pod::Spec.new do |mqttc|
 	mqttc.author       = { "novastonemedia" => "ios@novastonemedia.com" }
 	mqttc.source       = {
 		:git => "https://github.com/bolteu/MQTT-Client-Framework.git",
-		:commit => "e0b8c83e68c0c91bd2d07a611107381ac277ce7f"
+		:tag => mqttc.version.to_s
 	}
 
 	mqttc.requires_arc = true
