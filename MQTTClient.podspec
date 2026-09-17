@@ -83,7 +83,7 @@ Pod::Spec.new do |mqttc|
 	end
 
 	mqttc.subspec 'Websocket' do |ws|
-		ws.source_files = "#{source_root}/MQTTWebsocketTransport/*.m", "#{headers_root}/MQTTWebsocketTransport.h"
+		ws.source_files = "#{source_root}/MQTTWebsocketTransport.m", "#{headers_root}/MQTTWebsocketTransport.h"
 		ws.public_header_files = "#{headers_root}/MQTTWebsocketTransport.h"
 		ws.header_mappings_dir = headers_root
 		ws.dependency 'SocketRocket', '~> 0.6.0'
@@ -93,7 +93,7 @@ Pod::Spec.new do |mqttc|
 	end
 
 	mqttc.subspec 'WebsocketL' do |wsl|
-		wsl.source_files = "#{source_root}/MQTTWebsocketTransport/*.m", "#{headers_root}/MQTTWebsocketTransport.h"
+		wsl.source_files = "#{source_root}/MQTTWebsocketTransport.m", "#{headers_root}/MQTTWebsocketTransport.h"
 		wsl.public_header_files = "#{headers_root}/MQTTWebsocketTransport.h"
 		wsl.header_mappings_dir = headers_root
 		wsl.dependency 'SocketRocket', '~> 0.6.0'
